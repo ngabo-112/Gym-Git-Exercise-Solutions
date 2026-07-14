@@ -229,3 +229,290 @@ To https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
    d840325..e97a018  ft/team-page -> ft/team-page
 PS C:\Users\USER\Documents\Gym-Git-Exercise-Solutions> 
 ```
+### exercise 2 
+```
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/service-redesign
+* ft/team-page
+  main
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/faq-page
+M       README.md
+Switched to branch 'ft/faq-page'
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git switch main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git commit -m " changed the index.html"
+[main 40482ad]  changed the index.html
+ 2 files changed, 190 insertions(+), 1 deletion(-)
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.21 KiB | 754.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
+   a8b3a22..40482ad  main -> main
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git branch 
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ 
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m "added a paragraph"
+[ft/home-page-redesign 07e87a4] added a paragraph
+ 1 file changed, 1 insertion(+)
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 739 bytes | 369.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/ngabo-112/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote: 
+To https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+```
+
+## bundle 4
+### exercise 1
+```
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/service-redesign
+* ft/team-page
+  main
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/faq-page
+M       README.md
+Switched to branch 'ft/faq-page'
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git switch main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git commit -m " changed the index.html"
+[main 40482ad]  changed the index.html
+ 2 files changed, 190 insertions(+), 1 deletion(-)
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.21 KiB | 754.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
+   a8b3a22..40482ad  main -> main
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git branch 
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ 
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m "added a paragraph"
+[ft/home-page-redesign 07e87a4] added a paragraph
+ 1 file changed, 1 insertion(+)
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 739 bytes | 369.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/ngabo-112/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote: 
+To https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git fetch main 
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git fetch origin main
+fatal: unable to access 'https://github.com/ngabo-112/Gym-Git-Exercise-Solutions/': Could not resolve host: github.com
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git fetch origin main
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 2.83 KiB | 58.00 KiB/s, done.
+From https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   40482ad..2d70c3c  main       -> origin/main
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main
+From https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+Updating 40482ad..2d70c3c
+Fast-forward
+ faq.html     | 11 +++++++++++
+ service.html |  4 +++-
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+ create mode 100644 faq.html
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Everything up-to-date
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git remote add git-copy https://github.com/ngabo-112/git-exercise-clone.git
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git remote 
+git-copy
+origin
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git add index.html
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "added on the git repository"
+[main ecaa349] added on the git repository
+ 1 file changed, 1 insertion(+)
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy main
+Enumerating objects: 56, done.
+Counting objects: 100% (56/56), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (56/56), 10.83 KiB | 461.00 KiB/s, done.
+Total 56 (delta 22), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (22/22), done.
+To https://github.com/ngabo-112/git-exercise-clone.git
+ * [new branch]      main -> main
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 86.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ngabo-112/Gym-Git-Exercise-Solutions
+   2d70c3c..ecaa349  main -> main
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git remote rm git-copy
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+$ git remote
+origin
+
+USER@DESKTOP-6F4ICRN MINGW64 ~/Documents/Gym-Git-Exercise-Solutions (main)
+```
